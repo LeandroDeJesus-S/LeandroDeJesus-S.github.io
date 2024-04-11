@@ -10,13 +10,30 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     
     <title>Portfólio</title>
+
+    <style>
+        body {
+            background-color: rgba(191, 212, 212, 0.738);
+        }
+        .project-img {
+            border-radius: 15px;
+        }
+        /* Estilo personalizado para os ícones de navegação */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          background-color: rgb(0, 140, 255); /* Altere para a cor desejada */
+        }
+        
+        
+        
+      </style>
 </head>
-<body class="">
+<body>
     
 
     <nav class="navbar navbar-light bg-light shadow-sm fixed-top">
         <div class="container-lg">
-            <a href="#" class="navbar-brand text-info fw-bold fs-4">Portfólio</a>
+            <a href="index.html" class="navbar-brand text-info fw-bold fs-4">Portfólio</a>
             <div class="dropdown">
                 <button class="btn btn-info btn-info px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="fas fa-bars"></span>
@@ -26,7 +43,7 @@
                   <li><a class="dropdown-item" href="#home">Home</a></li>
                   <li><a class="dropdown-item" href="#about">Sobre</a></li>
                   <li><a class="dropdown-item" href="#services">Serviços</a></li>
-                  <li><a class="dropdown-item" href="#portifolio">Portfólio</a></li>
+                  <li><a class="dropdown-item" href="#portfolio">Portfólio</a></li>
                   <li><a class="dropdown-item" href="#contact">Contato</a></li>
                 </ul>
               </div>
@@ -59,7 +76,6 @@
                             Agora, foco na área de ciência de dados, com ênfase na análise e tratamento de dados, além da criação de modelos de machine learning e deep learning para diversas tarefas. 
                             Também tenho experiência em desenvolvimento web, com destaque para o framework Django.
                         </p>
-                        <a href="#portifolio" class="btn btn-info px-3 mt-3">Projetos</a>
                     </div>
                 </div>
                 
@@ -72,7 +88,6 @@
         
     </section>
     <!--home section end-->
-
 
     <!--about section-->
     <section class="about py-5" id="about">
@@ -101,11 +116,7 @@
                     <div class="row">
                         <div class="col-lg-12 d-flex align-items-center">
                             <a href="./static/curriculo-atualizado.pdf" class="btn btn-info me-5">Download CV</a>
-                            <div class="social-links">
-                                <a class="text-dark me-2" href="https://www.facebook.com/leandro.ls.754/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="text-dark me-2" href="https://www.instagram.com/_leandro_zz/"><i class="fab fa-instagram"></i></a>
-                                <a class="text-dark me-2" href="https://www.linkedin.com/in/leandro-de-jesus-santos-0185a1261/"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -165,6 +176,9 @@
                         <div class="icon my-3 text-info fs-2"><i class="fas fa-code"></i></div>
                         <h3 class="fs-5 py-2">Desenvolvimento Web Back-end</h3>
                         <p class="text-muted">Com manipulação de banco de dados, API's, deploy, entre outros.</p>
+                        <div class="d-flex justify-content-end">
+                            <a class="text-info me-2" href="https://wa.me/5527988724130"><i class="fab fa-whatsapp fa-2x"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -173,14 +187,20 @@
                         <div class="icon my-3 text-info fs-2"><i class="fas fa-chart-line"></i></div>
                         <h3 class="fs-5 py-2">Ciência de Dados</h3>
                         <p class="text-muted">Analise e tratamento de dados, criação de dashboards com BI, etc.</p>
+                        <div class="d-flex justify-content-end">
+                            <a class="text-info me-2" href="https://wa.me/5527988724130"><i class="fab fa-whatsapp fa-2x"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="service-item shadow-sm p-4 rounded bg-white">
                         <div class="icon my-3 text-info fs-2"><i class="fas fa-robot"></i></div>
-                        <h3 class="fs-5 py-2">Automação de Processos Robóticos</h3>
+                        <h3 class="fs-5 py-2">Automação RPA</h3>
                         <p class="text-muted">Web scraping, automação desktop, web, etc.</p>
+                        <div class="d-flex justify-content-end">
+                            <a class="text-info me-2" href="https://wa.me/5527988724130"><i class="fab fa-whatsapp fa-2x"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -189,51 +209,209 @@
     </div>
     <!--service section end-->
 
-    <!--portifolio section-->
-    <section class="portifolio" id="portifolio">
+    <!--portfolio section-->
+    <section class="portfolio" id="portfolio">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-
                     <div class="section-title text-center">
-                        <h1 class="fw-bold mb-5">Projetos de Exemplo</h1>
+                        <h1 class="fw-bold mb-5">Meus Projetos</h1>
                     </div>
                 </div>
             </div>
+    
+            <div id="carouselMyProjects" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselMyProjects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselMyProjects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselMyProjects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselMyProjects" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselMyProjects" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselMyProjects" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
 
-            <div class="row">
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="./static/img/blog.png" class="w-100 img-thumbnail" alt="">
-                        <h3 class="text-capitalize fs-5 my-2">Blog</h3>
-                        <p class="mb-4"><a class="text-info text-decoration-none" href="https://github.com/LeandroDeJesus-S/projeto-blog">ver no github</a></p>
+                  <div class="carousel-item active ">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/LeandroDeJesus-S/agenda" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/agenda-720x350.jpg" class="project-img d-block w-70" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-light fs-2" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Agenda</h5>
+                        </div>
                     </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/LeandroDeJesus-S/projeto-blog" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/blog-720x350.png" class="project-img d-block w-70" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-dark fs-2" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Blog</h5>
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/LeandroDeJesus-S/ecommerce" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/ecommerce-720x350.jpg" class="project-img d-block w-70" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark fs-2" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">E-commerce</h5>
+                        </div>
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/LeandroDeJesus-S/modelo-de-banco-de-dados-ecommerce" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/modelo-EER-ecommerce-720x350.png" class="project-img d-block w-70" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark fs-2" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Banco de dados para E-commerce</h5>
+                        </div>
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/LeandroDeJesus-S/recsys" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/recsys-720x350.png" class="project-img d-block w-70" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-light fs-2" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Sistema de recomendação de imagens</h5>
+                        </div>
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/LeandroDeJesus-S/automacao-de-relatorio/tree/main" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/automacao-relatorio-720x350.png" class="project-img d-block w-70" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-light fs-2" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Automação de relatório</h5>
+                        </div>
+                    </div>
+                  </div> 
+
                 </div>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="./static/img/ecommerce.jpg" class="w-100 img-thumbnail" alt="">
-                        <h3 class="text-capitalize fs-5 my-2">E-commerce</h3>
-                        <p class="mb-4"><a class="text-info text-decoration-none" href="https://github.com/LeandroDeJesus-S/ecommerce">ver no github</a></p>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMyProjects" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMyProjects" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="./static/img/agenda.jpg" class="w-100 img-thumbnail" alt="">
-                        <h3 class="text-capitalize fs-5 my-2">Agenda</h3>
-                        <p class="mb-4"><a class="text-info text-decoration-none" href="https://github.com/LeandroDeJesus-S/agenda">ver no github</a></p>
-                    </div>
-                </div>
-
-            </div>
+              </div>
+            
         </div>
     </section>
-    <!--portifolio section end-->
+    <!--portfolio section end-->
+
+    <!--certs section-->
+    <section class="certs mt-5" id="certs">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h1 class="fw-bold mb-5">Certificados</h1>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="carouselCertificates" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCertificates" data-bs-slide-to="0" class="active" aria-current="true" aria-label="python"></button>
+                    <button type="button" data-bs-target="#carouselCertificates" data-bs-slide-to="1" aria-label="santander-bootcamp"></button>
+                    <button type="button" data-bs-target="#carouselCertificates" data-bs-slide-to="2" aria-label="machine_learning"></button>
+                    <button type="button" data-bs-target="#carouselCertificates" data-bs-slide-to="3" aria-label="mysql"></button>
+                    <button type="button" data-bs-target="#carouselCertificates" data-bs-slide-to="4" aria-label="potencia-tech-ifood"></button>
+                    <button type="button" data-bs-target="#carouselCertificates" data-bs-slide-to="5" aria-label="excel"></button>
+                    <button type="button" data-bs-target="#carouselCertificates" data-bs-slide-to="6" aria-label="estatística"></button>
+                    <button type="button" data-bs-target="#carouselCertificates" data-bs-slide-to="7" aria-label="lgpd"></button>
+                    <button type="button" data-bs-target="#carouselCertificates" data-bs-slide-to="8" aria-label="linguagem-simples"></button>
+                </div>
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                            <img src="./static/img/cert/certificado python em jpg-720x400.jpg" class="project-img d-block w-70" alt="...">
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                            <img src="./static/img/cert/santander-bootcamp-720x400.jpg" class="project-img d-block w-70" alt="santander-bootcamp">
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <img src="./static/img/cert/machine_learning_specialist-720x400.jpg" class="project-img d-block w-70" alt="machine_learning">
+                    </div>
+                  </div>
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <img src="./static/img/cert/certificado mysql-720x400.jpg" class="project-img d-block w-70" alt="mysql">
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <img src="./static/img/cert/potencia-tect-powered-by-Ifood-certificado-720x400.jpg" class="project-img d-block w-70" alt="potencia-tech-ifood">
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <img src="./static/img/cert/certificado_Excel-720x400.jpg" class="project-img d-block w-70" alt="excel">
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <img src="./static/img/cert/Leandro de Jesus Santos_certificado_Estatistica-720x400.jpg" class="project-img d-block w-70" alt="estatística">
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <img src="./static/img/cert/LGPD-720x400.jpg" class="project-img d-block w-70" alt="lgpd">
+                    </div>
+                  </div> 
+
+                  <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <img src="./static/img/cert/linguagem simples-720x400.jpg" class="project-img d-block w-70" alt="linguagem-simples">
+                    </div>
+                  </div> 
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCertificates" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCertificates" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+              </div>
+            
+        </div>
+    </section>
+    <!--portfolio section end-->
 
     <!--contact section-->
-    <section class="contact py-5 bg-white" id="contact">
+    <section class="contact mt-5 shadow-sm" id="contact">
         <div class="container-lg py-4">
 
             <div class="row justify-content-center">
@@ -245,62 +423,18 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-5">
-                    
-                    <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-info"><i class="fas fa-envelope"></i></div>
-                        <div class="text ms-3">
-                            <h3 class="fs-5">Email</h3>
-                            <p class="text-muted m-0">jstleandro@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-info"><i class="fas fa-phone"></i></div>
-                        <div class="text ms-3">
-                            <h3 class="fs-5">Phone</h3>
-                            <p class="text-muted m-0">(27) 98872-4130</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-7">
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="row">
-                                
-                                <div class="col-lg-6 mb-4">
-                                    <input type="text" placeholder="Seu Email" class="form-control form-control-lg fs-6 border-0 shadow-sm" id="email">
-                                </div>
-
-                                <div class="col-lg-6 mb-4">
-                                    <input type="text" placeholder="Assunto" class="form-control form-control-lg fs-6 border-0 shadow-sm" id="subject">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12 mb-4">
-                                    <textarea rows="5" placeholder="Sua Mensagem" class="form-control form-control-lg fs-6 border-0 shadow-sm" id="message"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button type="submit" class="btn btn-info px-3">Enviar Mensagem</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="social-links d-flex justify-content-around mb-5">
+                <a class="text-dark me-2" href="https://wa.me/5527988724130"><i class="fab fa-whatsapp fa-3x"></i></a>
+                <a class="text-dark me-2" href="https://www.instagram.com/_leandro_zz/"><i class="fab fa-instagram fa-3x"></i></a>
+                <a class="text-dark me-2" href="https://www.facebook.com/leandro.ls.754/"><i class="fab fa-facebook-f fa-3x"></i></a>
+                <a class="text-dark me-2" href="https://www.linkedin.com/in/leandro-de-jesus-santos-0185a1261/"><i class="fab fa-linkedin-in fa-3x"></i></a>
             </div>
 
         </div>
     </section>
     <!--contact section end-->
 
-    <footer>
+    <footer class="bg-info">
         <div class="container-lg">
             <div class="row">
                 <div class="col-lg-12">
@@ -310,22 +444,18 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
+    <!-- <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Evitar o envio padrão do formulário
         
-        // Capturar os valores do formulário
         const formData = new FormData(event.target);
         const email = formData.get('email');
         const subject = formData.get('subject');
         const message = formData.get('message');
         
-        // Montar o link "mailto"
         const mailtoLink = `mailto:jstleandro@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
-        // Abrir o cliente de e-mail padrão com os valores preenchidos
         window.location.href = mailtoLink;
         });
-    </script>
+    </script> -->
 </body>
 </html>
