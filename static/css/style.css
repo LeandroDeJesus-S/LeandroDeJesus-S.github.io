@@ -8,8 +8,7 @@ form:focus {
 form {
     background-color: #2a3f54;
     border-radius: 200px;
-    padding: 1.4%;
-    width: 50%;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }

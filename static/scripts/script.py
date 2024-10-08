@@ -1,5 +1,6 @@
 from browser import document, bind
 from urllib.parse import quote
+from datetime import datetime
 
 form = document["contact-form"]
 form_style = """
@@ -26,3 +27,6 @@ def on_keyup(e):
     text = quote(str(e.target.value).strip())
     if text:
         document['contact-button'].setAttribute('href', f'https://wa.me/5527988724130?text={text}')
+
+
+document['age'].text = datetime.now().year - 2002

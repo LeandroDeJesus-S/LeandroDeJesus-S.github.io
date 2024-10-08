@@ -10,6 +10,8 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
     <link rel="stylesheet" href="static/css/style.css">
@@ -22,34 +24,32 @@
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center vh-100">
 
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
                     <span class="text-uppercase fw-light text-secondary">
-                        <a href="https://git.io/typing-svg"><img
-                                src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=300&size=15&letterSpacing=smaller&pause=1000&color=6C757D&vCenter=true&width=360&height=15&lines=DESBRAVANDO+A+PROGRAMA%C3%87%C3%83O+DESDE+2022."
-                                alt="Typing SVG" /></a>
+                        <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=300&size=12&letterSpacing=SMALL&pause=1000&color=6C757D&width=360&height=15&lines=TRANSFORMANDO+IDEIAS+EM+SOFTWARE." alt="Typing SVG" /></a>
                     </span>
                     <h1 class="display-4 fw-normal">Programador<br><span style="color: #284b63;">Back-end</span></h1>
-                    <span class="text-uppercase fw-light">Olá, eu sou o Leandro. Tenho 22 anos e tenho contato com a
-                        área de tecnologia desde 2022 onde comecei a estudar sobre programação.</span>
+                    <span class="text-uppercase fw-light">Olá, eu sou o Leandro. Tenho <span id="age"></span> anos e tenho contato com a
+                        área de tecnologia desde 2022 onde comecei a estudar programação.</span>
 
                     <div
                         class="social-icons d-flex p-3 gap-3 justify-content-md-start justify-content-center justify-content-md-start">
-                        <a href="https://www.linkedin.com/in/leandro-de-jesus-santos-0185a1261/">
+                        <a target="_blank" href="https://www.linkedin.com/in/leandro-de-jesus-santos-0185a1261/">
                             <img width="28" height="28" src="static/img/icons/icons8-linkedin-28.png" alt="linkedin" />
                         </a>
-                        <a href="https://github.com/LeandroDeJesus-S">
+                        <a target="_blank" href="https://github.com/LeandroDeJesus-S">
                             <img width="28" height="28" src="static/img/icons/icons8-github-28.png" alt="linkedin" />
                         </a>
-                        <a href="https://wa.me/5527988724130">
+                        <a target="_blank" href="https://wa.me/5527988724130">
                             <img width="28" height="28" src="static/img/icons/icons8-whatsapp-28.png" alt="linkedin" />
                         </a>
-                        <a href="https://www.instagram.com/_leandro_zz/">
+                        <a target="_blank" href="https://www.instagram.com/_leandro_zz/">
                             <img width="28" height="28" src="static/img/icons/icons8-instagram-28.png" alt="linkedin" />
                         </a>
                     </div>
                 </div>
 
-                <div class="col-md-6 d-grid justify-content-center">
+                <div class="col-md-6 d-grid justify-content-center" data-aos="fade-left" data-aos-duration="2000">
                     <img class="img-fluid rounded-circle shadow-lg" src="static/img/me-removebg-preview.png" alt="">
                 </div>
 
@@ -58,31 +58,36 @@
     </section>
 
 
-
-    <section id="about" class="d-flex flex-column justify-content-center vh-100">
+    <section id="about" data-aos="zoom-in" data-aos-duration="2000" class="d-flex flex-column justify-content-center vh-100">
         <div class="container">
             <h1 class="fs-4 py-5">Sobre</h1>
 
             <div class="vstack gap-3">
                 <div>
-                    <p class="">Get started</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fugit est distinctio ad
-                        laboriosam pariatur nemo? Minima, quasi! Aliquam optio molestias iste ex eius consectetur
-                        adipisci ipsam, earum consequuntur totam!</p>
+                    <p class="">Primeiros passos</p>
+                    <p>
+                        Minha jornada começou em 2022, onde comecei a estudar python por meio de cursos gratuitos 
+                        utilizando o próprio YouTube. Desde então foi amor a primeira vista e a partir disso
+                        busquei incrementar meu conhecimento cada vez mais, estudando de forma autônoma por cursos online.
+                    </p>
                 </div>
 
                 <div>
                     <p class="">Momento atual</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fugit est distinctio ad
-                        laboriosam pariatur nemo? Minima, quasi! Aliquam optio molestias iste ex eius consectetur
-                        adipisci ipsam, earum consequuntur totam!</p>
+                    <p>
+                        Atualmente estou em busca da minha primeira oportunidade no mercado de trabalho para a área
+                        de programação como desenvolvedor web backend onde eu possa tanto contribuir com meus conhecimentos
+                        quanto aprender e se desenvolver cada vez mais.
+                    </p>
                 </div>
 
                 <div>
-                    <p class="">Futuro</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fugit est distinctio ad
-                        laboriosam pariatur nemo? Minima, quasi! Aliquam optio molestias iste ex eius consectetur
-                        adipisci ipsam, earum consequuntur totam!</p>
+                    <p class="">Planos futuros</p>
+                    <p>
+                        Futuramente pretendo me especializar como cientista de dados, realizar meu superior e
+                        me tornar um profissional cada vez melhor, desmistificando a forma como as pessoas 
+                        enxergam a IA e construindo soluções que tornem a vida delas cada vez melhor.
+                    </p>
                 </div>
             </div>
 
@@ -90,8 +95,7 @@
     </section>
 
 
-
-    <section id="projects" class="min-vh-100 p-5 d-flex flex-column justify-content-center align-items-center">
+    <section id="projects" data-aos="fade-right" data-aos-duration="2000" class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
         <div class="container">
             <h1 class="text-center fw-light text-capitalize mb-5">Projetos</h1>
 
@@ -105,7 +109,7 @@
                                     <div class="card-body">
                                         <h2 class="text-center fs-5">Blog</h2>
                                         <p class="card-text">
-                                            Também construído com Django possuindo diversas funcionalidades para criação
+                                            Um blog completo construído com Django possuindo diversas funcionalidades para criação
                                             e gerenciamento de posts.
                                         </p>
                                     </div>
@@ -237,8 +241,7 @@
     </section>
 
 
-
-    <section id="certificates" class="min-vh-100 d-flex flex-column justify-content-center">
+    <section id="certificates" data-aos="fade-left" data-aos-duration="2000" class="min-vh-100 d-flex flex-column justify-content-center">
         <div class="container">
             <h1 class="text-center text-capitalize fw-light mb-5">Certificados</h1>
 
@@ -264,7 +267,7 @@
                                                     <small class="text-body-secondary">Duração: 141 horas</small><br>
                                                     <small class="text-body-secondary">Término: 13 de outubro de
                                                         2023</small><br>
-                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                    <small class="text-body-secondary"><a target="_blank" class="link-secondary"
                                                             href="ude.my/UC-35ea30b1-0079-4e4c-8cd7-439cb46545c3">ver
                                                             certificado</a></small><br>
                                                 </p>
@@ -293,7 +296,7 @@
                                                     <small class="text-body-secondary">Término: 21 de Novembro de
                                                         2023</small><br>
                                                     <small class="text-body-secondary">Duração: 72 horas</small><br>
-                                                    <small class="text-body-secondary"><a
+                                                    <small class="text-body-secondary"><a target="_blank"
                                                             href="https://hermes.dio.me/certificates/3938B89F.pdf"
                                                             class="link-secondary">ver certificado</a></small>
                                                 </p>
@@ -323,7 +326,7 @@
                                                     <small class="text-body-secondary">Duração: 15 horas</small><br>
                                                     <small class="text-body-secondary"><a
                                                             href="https://hermes.dio.me/certificates/BTTYEADO.pdf"
-                                                            class="link-secondary">ver certificado</a></small>
+                                                            class="link-secondary" target="_blank">ver certificado</a></small>
                                                 </p>
                                             </div>
                                         </div>
@@ -352,7 +355,7 @@
                                                     <small class="text-body-secondary">Duração: 92 horas</small><br>
                                                     <small class="text-body-secondary">Término: 24 de Dezembro de
                                                         2023</small><br>
-                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                    <small class="text-body-secondary"><a target="_blank" class="link-secondary"
                                                             href="https://hermes.dio.me/certificates/FDB3951B.pdf">ver
                                                             certificado</a></small><br>
                                                 </p>
@@ -376,7 +379,7 @@
                                                 <p class="card-text">
                                                     <small class="text-body-secondary">Duração: 80 horas</small><br>
                                                     <small class="text-body-secondary">Término: 10 de Setembro de 2023</small><br>
-                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                    <small class="text-body-secondary"><a target="_blank" class="link-secondary"
                                                             href="https://hermes.dio.me/certificates/6A7A8B1E.pdf">ver
                                                             certificado</a></small><br>
                                                 </p>
@@ -402,7 +405,7 @@
                                                 <p class="card-text">
                                                     <small class="text-body-secondary">Duração: 89 horas</small><br>
                                                     <small class="text-body-secondary">Término: 10 de Outubro de 2023</small><br>
-                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                    <small class="text-body-secondary"><a target="_blank" class="link-secondary"
                                                             href="https://hermes.dio.me/certificates/7249334C.pdf">ver
                                                             certificado</a></small><br>
                                                 </p>
@@ -432,7 +435,7 @@
                                                 <p class="card-text">
                                                     <small class="text-body-secondary">Duração: 25 horas</small><br>
                                                     <small class="text-body-secondary">Término: 15 de Setembro de 2023</small><br>
-                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                    <small class="text-body-secondary"><a target="_blank" class="link-secondary"
                                                             href="https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=%20cYCz10503504uIup">ver
                                                             certificado</a></small><br>
                                                 </p>
@@ -459,7 +462,7 @@
                                                 <p class="card-text">
                                                     <small class="text-body-secondary">Duração: 08 horas</small><br>
                                                     <small class="text-body-secondary">Término: 02 de Novembro de 2023</small><br>
-                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                    <small class="text-body-secondary"><a target="_blank" class="link-secondary"
                                                             href="https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=3X4B108159624YUM">ver
                                                             certificado</a></small><br>
                                                 </p>
@@ -485,7 +488,7 @@
                                                 <p class="card-text">
                                                     <small class="text-body-secondary">Duração: 20 horas</small><br>
                                                     <small class="text-body-secondary">Término: 07 de Novembro de 2023</small><br>
-                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                    <small class="text-body-secondary"><a target="_blank" class="link-secondary"
                                                             href="https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=3X4B108159624YUM">ver
                                                             certificado</a></small><br>
                                                 </p>
@@ -520,7 +523,9 @@
         <div class="container">
             <h1 class="text-center fw-light mb-5">Serviços</h1>
             <div class="row gx-5 gy-2">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <div class="card bg-service-card h-100" style="background-color: #284b63;">
                         <div class="card-body fs-5">
                             <div class="icon my-3 service-card-title fs-2"><i class="fas fa-code"></i></div>
@@ -531,7 +536,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <div class="card bg-service-card h-100" style="background-color: #284b63;">
                         <div class="card-body fs-5">
                             <div class="icon my-3 service-card-title fs-2"><i class="fas fa-chart-line"></i></div>
@@ -542,7 +549,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <div class="card bg-service-card h-100" style="background-color: #284b63;">
                         <div class="card-body fs-5">
                             <div class="icon my-3 service-card-title fs-2"><i class="fas fa-robot"></i></div>
@@ -557,7 +566,7 @@
     </section>
 
 
-    <section id="contact" class="min-vh-100 d-flex flex-column justify-content-center">
+    <section id="contact" data-aos="zoom-in-up" data-aos-duration="2000" class="min-vh-100 d-flex flex-column justify-content-center">
         <div class="container pt-5">
             <h1 class="text-center">Contato</h1>
 
@@ -572,13 +581,16 @@
 
                 <h2 class="text-center my-4">Whatsapp</h2>
                 <div class="container d-flex justify-content-center">
-
-                    <form class="contact-form" id="contact-form">
-                        <img src="static/img/icons/icons8-whatsapp-28.png" alt="whatsapp icon">
-                        <input id="contact-input" type="text" placeholder="Olá, gostaria de ..."
-                            class="contact-input w-100 text-center">
-                        <a id="contact-button" href="#"><img src="static/img/icons/icons8-enviado-24.png" alt=""></a>
-                    </form>
+                    <div class="row">
+                        <div class="col">
+                            <form class="contact-form w-100" id="contact-form">
+                                <img src="static/img/icons/icons8-whatsapp-28.png" alt="whatsapp icon">
+                                <input id="contact-input" type="text" placeholder="Olá, gostaria de ..."
+                                    class="contact-input w-100 text-center">
+                                <a id="contact-button" href="#ctt" target="_blank"><img src="static/img/icons/icons8-enviado-24.png" alt=""></a>
+                            </form>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -590,17 +602,15 @@
     </section>
 
 
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
     <script type="text/python" src="static/scripts/script.py"></script>
 </body>
