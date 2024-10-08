@@ -4,486 +4,603 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/style.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="static/css/style.css">
 
     <title>Leandro de Jesus Santos</title>
 </head>
 
-<body onload="brython()" data-bs-theme="dark">
-
-    <section id="home" class="bgd-secondary">
+<body onload="brython()" data-bs-theme="dark" style="background-color: #13293d;">
+    <section id="home" class="vh-100">
         <div class="container">
-            <div class="row p-5">
-                <div class="col-md-6 d-flex justify-content-center">
-                    <img width="360" class="img-fluid" style="border-radius: 50px;" src="static/img/me.jpg" alt="">
-                </div>
+            <div class="row d-flex justify-content-center align-items-center vh-100">
 
-                <div class="col-md-6 d-flex flex-column justify-content-center order-md-first">
-                    <div class="d-flex justify-content-center">
-                        <h1 class="display-3 fw-bold text-blue-primary">Programador</h1>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <h1 class="display-4 fw-bold text-blue-secondary">Back-end</h1>
-                    </div>
+                <div class="col-md-6">
+                    <span class="text-uppercase fw-light text-secondary">
+                        <a href="https://git.io/typing-svg"><img
+                                src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=300&size=15&letterSpacing=smaller&pause=1000&color=6C757D&vCenter=true&width=360&height=15&lines=DESBRAVANDO+A+PROGRAMA%C3%87%C3%83O+DESDE+2022."
+                                alt="Typing SVG" /></a>
+                    </span>
+                    <h1 class="display-4 fw-normal">Programador<br><span style="color: #284b63;">Back-end</span></h1>
+                    <span class="text-uppercase fw-light">Olá, eu sou o Leandro. Tenho 22 anos e tenho contato com a
+                        área de tecnologia desde 2022 onde comecei a estudar sobre programação.</span>
 
-                    <p class="text-center fs-5">Desbravando a área da programação desde <span
-                            class="fw-bold text-magenta">2022</span></p>
-
-                    <div class="row d-flex align-content-end gap-5">
-                        <div id="social" class="col-md-2 d-flex flex-column justify-content-end gap-3 g-0">
-                            <a href="https://www.linkedin.com/in/leandro-de-jesus-santos-0185a1261/"><svg width="24" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                </svg></a></li>
-                                <a href="https://github.com/LeandroDeJesus-S"><svg width="24" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                                </svg></a>
-                                <a href="https://www.instagram.com/_leandro_zz/"><svg width="24" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                                </svg></a>
-                                <a href="https://wa.me/5527988724130"><svg width="24" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                        <path
-                                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-                                    </svg></a>
-                        </div>
-
-                        <div class="col-md-6 d-flex flex-column  gap-3">
-                            <a style="border: none;background: linear-gradient(to right, #b8a9ab, #d9d9d9); border-radius: 15px;"
-                                href="#about" class="fw-bold text-decoration-none text-light btn btn-lg">Sobre</a>
-                            <a style="border: none;background: linear-gradient(to right, #b8a9ab, #d9d9d9); border-radius: 15px;"
-                                href="#projects" class="fw-bold text-decoration-none text-light btn btn-lg">Projetos</a>
-                            <a style="border: none;background: linear-gradient(to right, #b8a9ab, #d9d9d9); border-radius: 15px;"
-                                href="#certificates"
-                                class="fw-bold text-decoration-none text-light btn btn-lg">Certificados</a>
-                            <a style="border: none;background: linear-gradient(to right, #b8a9ab, #d9d9d9); border-radius: 15px;"
-                                href="#services" class="fw-bold text-decoration-none text-light btn btn-lg">Serviços</a>
-                            <a style="border: none;background: linear-gradient(to right, #b8a9ab, #d9d9d9); border-radius: 15px;"
-                                href="#contact" class="fw-bold text-decoration-none text-light btn btn-lg">Contato</a>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-    </section>
-
-    <section id="about" class="bgd-primary">
-        <div class="container pt-5">
-            <h1 class="display-4 fw-bold title-secondary text-center">Sobre</h1>
-            <div class="container text-white fs-5 p-2">
-                <p>Olá, eu sou o <span class="text-brown-highlight">Leandro</span>. Tenho <span
-                        class="text-brown-highlight">22 anos</span> e tenho contato com a área de tecnologia desde 2022
-                    onde comecei a estudar sobre programação.</p>
-                <p>Desde então desenvolvi minhas habilidades com a linguagem de programação <span
-                        class="text-brown-highlight">Python</span> inicialmente para a área de <span
-                        class="text-brown-highlight">Desenvolvimento Web</span> com ferramentas como Flask, FastAPI e
-                    principalmente Django mas também, para a área de <span class="text-brown-highlight">Dados</span> e
-                    <span class="text-brown-highlight">Machine Learning</span> com ferramentas como Pandas, Numpy,
-                    Scikit-Learn, Tensorflow e PyTorch e para <span class="text-brown-highlight">Automação de Processos
-                        Robóticos</span> e <span class="text-brown-highlight">Web Scraping</span> com PyAutoGUI,
-                    Selenium, Scrapy, Requests+Beautifulsoup, entre outros.
-                </p>
-                <p>Atualmente busco minha <span class="text-brown-highlight">primeira oportunidade</span> como <span
-                        class="text-brown-highlight">programador júnior</span> para a área de <span
-                        class="text-brown-highlight">desenvolvimento web</span> com <span
-                        class="text-brown-highlight">Django.</span></p>
-                <p>Futuramente pretendo migrar para a área de <span class="text-brown-highlight">Ciência de Dados</span>
-                    ou <span class="text-brown-highlight">Inteligência artificial</span> e unir ambos os conhecimentos
-                    para poder agregar da melhor forma com meus conhecimentos.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="projects" class="bgd-secondary">
-        <div class="container p-5">
-            <h1 class="display-4 fw-bold title-primary text-center">Projetos</h1>
-
-            <div class="container pt-3">
-
-                <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="true">
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active d-flex justify-content-center">
-                            <div class="card p-2 bgd-primary text-white" style="max-width: 30rem;">
-                                <img src="static/img/projects/sistema-hotel.png" class="card-img-top img-fluid d-block"
-                                    alt="projeto site de hotel">
-                                <div class="card-body d-grid">
-                                    <h5 class="card-title text-center text-brown-highlight fw-bold fs-3"
-                                        style="text-transform: uppercase;">Site de Hotel</h5>
-                                    <p>
-                                        <span class="badge text-bg-warning text-light">Python</span>
-                                        <span class="badge text-bg-success text-light">Django</span>
-                                        <span class="badge text-bg-success text-light">Django Q</span>
-                                        <span class="badge text-light"
-                                            style="background-color: purple;">Bootstrap</span>
-                                        <span class="badge text-light text-bg-primary">Stripe</span>
-                                    </p>
-
-                                    <p class="card-text">Site de hotel criado para abordar temas como sistema de
-                                        pagamentos e fila de tarefas.</p>
-
-                                    <a href="https://github.com/LeandroDeJesus-S/sistema-de-hotel" class="btn">Ver
-                                        repositório</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <div class="card p-2 bgd-primary text-white" style="max-width: 30rem;">
-                                <img src="static/img/projects/agenda-720x350.jpg" class="card-img-top img-fluid d-block"
-                                    alt="...">
-                                <div class="card-body d-grid">
-                                    <h5 class="card-title text-center text-brown-highlight fw-bold fs-3"
-                                        style="text-transform: uppercase;">Agenda</h5>
-                                    <p>
-                                        <span class="badge text-bg-warning text-light">Python</span>
-                                        <span class="badge text-bg-success text-light">Django</span>
-                                        <span class="badge text-light"
-                                            style="background-color: purple;">Bootstrap</span>
-                                    </p>
-
-                                    <p class="card-text">Agenda construída com Python e Django com suporte a operações
-                                        CRUD.</p>
-
-                                    <a href="https://github.com/LeandroDeJesus-S/agenda" class="btn">Ver repositório</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <div class="card p-2 bgd-primary text-white" style="max-width: 30rem;">
-                                <img src="static/img/projects/blog-720x350.png" class="card-img-top img-fluid d-block" alt="...">
-                                <div class="card-body d-grid">
-                                    <h5 class="card-title text-center text-brown-highlight fw-bold fs-3"
-                                        style="text-transform: uppercase;">Blog</h5>
-                                    <p>
-                                        <span class="badge text-bg-warning text-light">Python</span>
-                                        <span class="badge text-bg-success text-light">Django</span>
-                                        <span class="badge text-light"
-                                            style="background-color: purple;">Bootstrap</span>
-                                    </p>
-
-                                    <p class="card-text">Também construído com Django possuindo diversas funcionalidades
-                                        para criação e gerenciamento de posts.</p>
-                                    <a href="https://github.com/LeandroDeJesus-S/projeto-blog" class="btn">Ver
-                                        repositório</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <div class="card p-2 bgd-primary text-white" style="max-width: 30rem;">
-                                <img src="static/img/projects/adote.png" class="card-img-top img-fluid d-block" alt="...">
-                                <div class="card-body d-grid">
-                                    <h5 class="card-title text-center text-brown-highlight fw-bold fs-3"
-                                        style="text-transform: uppercase;">Adote</h5>
-                                    <p>
-                                        <span class="badge text-bg-warning text-light">Python</span>
-                                        <span class="badge text-bg-success text-light">Django</span>
-                                        <span class="badge text-light"
-                                            style="background-color: purple;">Bootstrap</span>
-                                    </p>
-
-                                    <p class="card-text">Site de adoção de animais onde usuários podem publicar ou
-                                        buscar por animais para adotar.</p>
-                                    <a href="https://github.com/LeandroDeJesus-S/projeto-adote" class="btn">Ver
-                                        repositório</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <div class="card p-2 bgd-primary text-white" style="max-width: 30rem;">
-                                <img src="static/img/projects/api_de_banco.png" class="card-img-top img-fluid d-block" alt="...">
-                                <div class="card-body d-grid">
-                                    <h5 class="card-title text-center text-brown-highlight fw-bold fs-3"
-                                        style="text-transform: uppercase;">API de banco</h5>
-                                    <p>
-                                        <span class="badge text-bg-warning text-light">Python</span>
-                                        <span class="badge text-bg-success text-light">FastAPI</span>
-                                    </p>
-
-                                    <p class="card-text">API de banco assíncrona construída com fast api.</p>
-                                    <a href="https://github.com/LeandroDeJesus-S/bank_api" class="btn">Ver
-                                        repositório</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <div class="card p-2 bgd-primary text-white" style="max-width: 30rem;">
-                                <img src="static/img/projects/football-data.png" class="card-img-top img-fluid d-block"
-                                    alt="...">
-                                <div class="card-body d-grid">
-                                    <h5 class="card-title text-center text-brown-highlight fw-bold fs-3"
-                                        style="text-transform: uppercase;">Football data scraping</h5>
-                                    <p>
-                                        <span class="badge text-bg-warning text-light">Python</span>
-                                        <span class="badge text-bg-success text-light">Scrapy</span>
-                                    </p>
-
-                                    <p class="card-text">Web crawler para baixar arquivos de dados de futebol do site <a
-                                            href="https://www.football-data.co.uk/"
-                                            class="bg-transparent text-brown-highlight">football data</a>.</p>
-                                    <a href="https://github.com/LeandroDeJesus-S/football-data-scraping" class="btn">Ver
-                                        repositório</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <div class="card p-2 bgd-primary text-white" style="max-width: 30rem;">
-                                <img src="static/img/projects/vnl.png" class="card-img-top img-fluid d-block" alt="...">
-                                <div class="card-body d-grid">
-                                    <h5 class="card-title text-center text-brown-highlight fw-bold fs-3"
-                                        style="text-transform: uppercase;">VNL scraping</h5>
-                                    <p>
-                                        <span class="badge text-bg-warning text-light">Python</span>
-                                        <span class="badge text-bg-success text-light">Selenium</span>
-                                        <span class="badge text-light" style="background-color: purple;">Pandas</span>
-                                        <span class="badge text-bg-primary text-light">Numpy</span>
-                                    </p>
-
-                                    <p class="card-text">Web crawler para baixar dados da <a
-                                            href="https://en.volleyballworld.com/volleyball/competitions/volleyball-nations-league/"
-                                            class="bg-transparent text-brown-highlight">Liga das Nações de Voleibol</a>.
-                                    </p>
-                                    <a href="https://github.com/LeandroDeJesus-S/volleyball-nations-league"
-                                        class="btn">Ver repositório</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <div class="card p-2 bgd-primary text-white" style="max-width: 30rem;">
-                                <img src="static/img/projects/xcrypt.png" class="card-img-top img-fluid d-block" alt="...">
-                                <div class="card-body d-grid">
-                                    <h5 class="card-title text-center text-brown-highlight fw-bold fs-3"
-                                        style="text-transform: uppercase;">Xcrypt</h5>
-                                    <p>
-                                        <span class="badge text-bg-warning text-light">Python</span>
-                                    </p>
-
-                                    <p class="card-text">Ferramenta de linha de comando para criptografia de arquivos e
-                                        diretórios.</p>
-                                    <a href="https://github.com/LeandroDeJesus-S/xcrypt" class="btn">Ver repositório</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <div class="card p-2 bgd-primary text-white" style="max-width: 30rem;">
-                                <img src="static/img/projects/yt-downloader.png" class="card-img-top img-fluid d-block"
-                                    alt="...">
-                                <div class="card-body d-grid">
-                                    <h5 class="card-title text-center text-brown-highlight fw-bold fs-3"
-                                        style="text-transform: uppercase;">YouTube downloader</h5>
-                                    <p>
-                                        <span class="badge text-bg-warning text-light">Python</span>
-                                    </p>
-
-                                    <p class="card-text">Ferramenta de linha de comando para baixar videos do YouTube.
-                                    </p>
-                                    <a href="https://github.com/LeandroDeJesus-S/youtube-downloader-music"
-                                        class="btn">Ver repositório</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section id="certificates" class="bgd-primary">
-        <div class="container pt-5">
-            <h1 class="display-4 fw-bold title-secondary text-center">Certificados</h1>
-            <div class="container pt-5">
-                <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="true">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active d-flex justify-content-center">
-                            <img src="static/img/cert/certificado python em jpg-720x400.jpg" class="img-fluid rounded"
-                                alt="...">
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <img src="static/img/cert/docker.png" class="img-fluid rounded" alt="...">
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <img src="static/img/cert/certificado mysql-720x400.jpg" class="img-fluid rounded"
-                                alt="...">
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <img src="static/img/cert/machine_learning_specialist-720x400.jpg" class="img-fluid rounded"
-                                alt="...">
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <img src="static/img/cert/santander-bootcamp-720x400.jpg" class="img-fluid rounded"
-                                alt="...">
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <img src="static/img/cert/Leandro de Jesus Santos_certificado_Estatistica-720x400.jpg"
-                                class="img-fluid rounded" alt="...">
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <img src="static/img/cert/potencia-tect-powered-by-Ifood-certificado-720x400.jpg"
-                                class="img-fluid rounded" alt="...">
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <img src="static/img/cert/certificado_Excel-720x400.jpg"
-                                class="img-fluid rounded" alt="...">
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <img src="static/img/cert/LGPD-720x400.jpg" class="img-fluid rounded" alt="...">
-                        </div>
-
-                        <div class="carousel-item d-flex justify-content-center">
-                            <img src="static/img/cert/linguagem simples-720x400.jpg" class="img-fluid rounded" alt="...">
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="services" class="bgd-secondary">
-        <div class="container pt-5">
-            <h1 class="display-4 fw-bold title-primary text-center">Serviços</h1>
-
-            <div class="container">
-
-                <div class="row py-5 gy-3">
-
-                    <div class="col-md-4">
-                        <div class="card bg-service-card">
-                            <div class="card-body">
-                                <div class="icon my-3 service-card-title fs-2"><i class="fas fa-code"></i></div>
-                                <h5 class="card-title service-card-title">Desenvolvimento Web Back-end</h5>
-                                <p class="card-text service-card-text">Construa sistemas sólidos e escaláveis com o desenvolvimento back-end em Python.</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="col-md-4">
-                        <div class="card bg-service-card">
-                            <div class="card-body">
-                                <div class="icon my-3 service-card-title fs-2"><i class="fas fa-chart-line"></i></div>
-                                <h5 class="card-title service-card-title">Ciência de Dados</h5>
-                                <p class="card-text service-card-text">Transforme dados em decisões inteligentes com soluções avançadas de ciência de dados.</p>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="col-md-4">
-                        <div class="card bg-service-card">
-                            <div class="card-body">
-                                <div class="icon my-3 service-card-title fs-2"><i class="fas fa-robot"></i></div>
-                                <h5 class="card-title service-card-title">Automação RPA</h5>
-                                <p class="card-text service-card-text">Otimize processos e aumente a produtividade com soluções de automação RPA personalizadas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="bgd-primary">
-        <div class="container pt-5">
-            <h1 class="display-4 fw-bold title-secondary text-center">Contato</h1>
-
-            <div class="container p-5">
-                <h2 class="text-center text-dark">Emails para contato</h2>
-
-                <div class="mt-3">
-                    <p class="text-center text-dark mb-0">jstleandro@gmail.com</p>
-                    <p class="text-center text-dark mb-0">leandrojs@proton.me</p>
-                    <p class="text-center text-dark mb-0">leandro.js.dev@gmail.com</p>
-                </div>
-
-                <h2 class="text-center text-dark mt-4">Whatsapp</h2>
-                <div class="container d-flex justify-content-center mt-3">
-
-                    <div id="contact-input-div" class="bg-white p-2 d-flex justify-content-between" style="border-radius: 20px; width: 20rem; border: 3px solid transparent">
-                        <i class="fab fa-whatsapp fa-2x text-dark"></i>
-                        <input id="contact-input" type="text" class="bg-transparent mx-3 text-dark" placeholder="Olá, gostaria de ...">
-                        <a id="contact-button" class="bg-transparent border-0">
-                            <svg width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+                    <div
+                        class="social-icons d-flex p-3 gap-3 justify-content-md-start justify-content-center justify-content-md-start">
+                        <a href="https://www.linkedin.com/in/leandro-de-jesus-santos-0185a1261/">
+                            <img width="28" height="28" src="static/img/icons/icons8-linkedin-28.png" alt="linkedin" />
+                        </a>
+                        <a href="https://github.com/LeandroDeJesus-S">
+                            <img width="28" height="28" src="static/img/icons/icons8-github-28.png" alt="linkedin" />
+                        </a>
+                        <a href="https://wa.me/5527988724130">
+                            <img width="28" height="28" src="static/img/icons/icons8-whatsapp-28.png" alt="linkedin" />
+                        </a>
+                        <a href="https://www.instagram.com/_leandro_zz/">
+                            <img width="28" height="28" src="static/img/icons/icons8-instagram-28.png" alt="linkedin" />
                         </a>
                     </div>
+                </div>
+
+                <div class="col-md-6 d-grid justify-content-center">
+                    <img class="img-fluid rounded-circle shadow-lg" src="static/img/me-removebg-preview.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="about" class="d-flex flex-column justify-content-center vh-100">
+        <div class="container">
+            <h1 class="fs-4 py-5">Sobre</h1>
+
+            <div class="vstack gap-3">
+                <div>
+                    <p class="">Get started</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fugit est distinctio ad
+                        laboriosam pariatur nemo? Minima, quasi! Aliquam optio molestias iste ex eius consectetur
+                        adipisci ipsam, earum consequuntur totam!</p>
+                </div>
+
+                <div>
+                    <p class="">Momento atual</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fugit est distinctio ad
+                        laboriosam pariatur nemo? Minima, quasi! Aliquam optio molestias iste ex eius consectetur
+                        adipisci ipsam, earum consequuntur totam!</p>
+                </div>
+
+                <div>
+                    <p class="">Futuro</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fugit est distinctio ad
+                        laboriosam pariatur nemo? Minima, quasi! Aliquam optio molestias iste ex eius consectetur
+                        adipisci ipsam, earum consequuntur totam!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="projects" class="min-vh-100 p-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <h1 class="text-center fw-light text-capitalize mb-5">Projetos</h1>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card bg-transparent border-0">
+                                    <img src="static/img/projects/blog-720x350.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-center fs-5">Blog</h2>
+                                        <p class="card-text">
+                                            Também construído com Django possuindo diversas funcionalidades para criação
+                                            e gerenciamento de posts.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card bg-transparent border-0">
+                                    <img src="static/img/projects/adote.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-center fs-5">Projeto adote</h2>
+                                        <p class="card-text">
+                                            Site de adoção de animais onde usuários podem publicar ou buscar por animais
+                                            para adotar.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card bg-transparent border-0">
+                                    <img src="static/img/projects/agenda-720x350.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-center fs-5">Agenda</h2>
+                                        <p class="card-text">
+                                            Agenda construída com Python e Django com suporte a operações CRUD.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card bg-transparent border-0">
+                                    <img src="static/img/projects/sistema-hotel.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-center fs-5">Site de hotel</h2>
+                                        <p class="card-text">
+                                            Site de hotel criado para abordar temas como sistema de pagamentos e fila de
+                                            tarefas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card bg-transparent border-0">
+                                    <img src="static/img/projects/football-data.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-center fs-5">Football data scraping</h2>
+                                        <p class="card-text">
+                                            Web crawler para baixar arquivos de dados de futebol do site football data.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card bg-transparent border-0">
+                                    <img src="static/img/projects/vnl.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-center fs-5">VNL scraping</h2>
+                                        <p class="card-text">
+                                            Web crawler para baixar dados da Liga das Nações de Voleibol.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card bg-transparent border-0">
+                                    <img src="static/img/projects/api_de_banco.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-center fs-5">API de banco</h2>
+                                        <p class="card-text">
+                                            API de banco assíncrona construída com fast api.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card bg-transparent border-0">
+                                    <img src="static/img/projects/xcrypt.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-center fs-5">Xcrypt</h2>
+                                        <p class="card-text">
+                                            Ferramenta de linha de comando para criptografia de arquivos e diretórios.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card bg-transparent border-0">
+                                    <img src="static/img/projects/yt-downloader.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-center fs-5">YouTube downloader</h2>
+                                        <p class="card-text">
+                                            Ferramenta de linha de comando para baixar videos e playlists do YouTube.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="certificates" class="min-vh-100 d-flex flex-column justify-content-center">
+        <div class="container">
+            <h1 class="text-center text-capitalize fw-light mb-5">Certificados</h1>
+
+            <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row gx-5 gy-3">
+                            <div class="col-md-12">
+                                <div class="card mb-3 bg-transparent border-0">
+                                    <div class="row gx-5">
+                                        <div class="col-md-4">
+                                            <img loading="lazy"
+                                                src="static/img/cert/certificado python em jpg-720x400.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Curso de Python 3 do básico ao avançado - com
+                                                    projetos reais</h5>
+                                                <p class="card-text">Disponibilizado pelo professor Luiz Otávio Miranda
+                                                    realizado na plataforma da Udemy</p>
+                                                <p class="card-text">
+                                                    <small class="text-body-secondary">Duração: 141 horas</small><br>
+                                                    <small class="text-body-secondary">Término: 13 de outubro de
+                                                        2023</small><br>
+                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                            href="ude.my/UC-35ea30b1-0079-4e4c-8cd7-439cb46545c3">ver
+                                                            certificado</a></small><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card mb-3 bg-transparent border-0">
+                                    <div class="row gx-5">
+                                        <div class="col-md-4">
+                                            <img src="static/img/cert/certificado mysql-720x400.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Formação SQL Database Specialist</h5>
+                                                <p class="card-text">
+                                                    Realizado na plataforma DIO (Digital Innovation One) onde foram
+                                                    abordados os mais diversos tópicos de modelagem, criação e
+                                                    gerenciamento de banco de dados usando MySQL.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-body-secondary">Término: 21 de Novembro de
+                                                        2023</small><br>
+                                                    <small class="text-body-secondary">Duração: 72 horas</small><br>
+                                                    <small class="text-body-secondary"><a
+                                                            href="https://hermes.dio.me/certificates/3938B89F.pdf"
+                                                            class="link-secondary">ver certificado</a></small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card mb-3 bg-transparent border-0">
+                                    <div class="row gx-5">
+                                        <div class="col-md-4">
+                                            <img src="static/img/cert/docker.png" class="img-fluid rounded-start"
+                                                alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Formação Docker Fundamentals</h5>
+                                                <p class="card-text">
+                                                    Realizado na plataforma DIO (Digital Innovation One) abordando
+                                                    tópicos desde containers até Docker Swarm e Load Balance com AWS.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-body-secondary">Término: 01 de Outubro de
+                                                        2024</small><br>
+                                                    <small class="text-body-secondary">Duração: 15 horas</small><br>
+                                                    <small class="text-body-secondary"><a
+                                                            href="https://hermes.dio.me/certificates/BTTYEADO.pdf"
+                                                            class="link-secondary">ver certificado</a></small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row gx-5 gy-3">
+                            <div class="col-md-12">
+                                <div class="card mb-3 bg-transparent border-0">
+                                    <div class="row gx-5">
+                                        <div class="col-md-4">
+                                            <img src="static/img/cert/machine_learning_specialist-720x400.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Formação Machine Learning Specialist</h5>
+                                                <p class="card-text">
+                                                    Realizado na plataforma DIO (Digital Innovation One) abordando tópicos como aprendizado supervisionado, não supervisionado, deep learning com redes convolucionais, entre outros.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-body-secondary">Duração: 92 horas</small><br>
+                                                    <small class="text-body-secondary">Término: 24 de Dezembro de
+                                                        2023</small><br>
+                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                            href="https://hermes.dio.me/certificates/FDB3951B.pdf">ver
+                                                            certificado</a></small><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card mb-3 bg-transparent border-0">
+                                    <div class="row gx-5">
+                                        <div class="col-md-4">
+                                            <img src="static/img/cert/potencia-tect-powered-by-Ifood-certificado-720x400.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Potência Tech powered by iFood | Ciência de Dados</h5>
+                                                <p class="card-text">Bootcamp da DIO em parceria com o Ifood para ciência de dados onde foram abordados tópicos como análise de dados (exploratória e explanatória), banco de dados, BI, etc.</p>
+                                                <p class="card-text">
+                                                    <small class="text-body-secondary">Duração: 80 horas</small><br>
+                                                    <small class="text-body-secondary">Término: 10 de Setembro de 2023</small><br>
+                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                            href="https://hermes.dio.me/certificates/6A7A8B1E.pdf">ver
+                                                            certificado</a></small><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card mb-3 bg-transparent border-0">
+                                    <div class="row gx-5">
+                                        <div class="col-md-4">
+                                            <img src="static/img/cert/santander-bootcamp-720x400.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Santander Bootcamp 2023 - Ciência de Dados com Python</h5>
+                                                <p class="card-text">
+                                                    Bootcamp da DIO em parceria com o Santander para ciência de dados.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-body-secondary">Duração: 89 horas</small><br>
+                                                    <small class="text-body-secondary">Término: 10 de Outubro de 2023</small><br>
+                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                            href="https://hermes.dio.me/certificates/7249334C.pdf">ver
+                                                            certificado</a></small><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row gx-5 gy-3">
+                            <div class="col-md-12">
+                                <div class="card mb-3 bg-transparent border-0">
+                                    <div class="row gx-5">
+                                        <div class="col-md-4">
+                                            <img src="static/img/cert/certificado_Excel-720x400.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Introdução ao Excel</h5>
+                                                <p class="card-text">
+                                                    Curso básico de excel realizado da plataforma da EVG (Escola Virtual do Governo).
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-body-secondary">Duração: 25 horas</small><br>
+                                                    <small class="text-body-secondary">Término: 15 de Setembro de 2023</small><br>
+                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                            href="https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=%20cYCz10503504uIup">ver
+                                                            certificado</a></small><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card mb-3 bg-transparent border-0">
+                                    <div class="row gx-5">
+                                        <div class="col-md-4">
+                                            <img src="static/img/cert/linguagem simples-720x400.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Linguagem Simples</h5>
+                                                <p class="card-text">
+                                                    Curso básico sobre linguagem simples onde foi abordado o conceito de como escrever textos de forma simples
+                                                    e direta visando passar informações de forma simples e clara para o público leitor.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-body-secondary">Duração: 08 horas</small><br>
+                                                    <small class="text-body-secondary">Término: 02 de Novembro de 2023</small><br>
+                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                            href="https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=3X4B108159624YUM">ver
+                                                            certificado</a></small><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card mb-3 bg-transparent border-0">
+                                    <div class="row gx-5">
+                                        <div class="col-md-4">
+                                            <img src="static/img/cert/Leandro de Jesus Santos_certificado_Estatistica-720x400.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Estatística</h5>
+                                                <p class="card-text">
+                                                    Curso básico de estatística realizado na plataforma EVG (Escola Virtual do Governo)
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-body-secondary">Duração: 20 horas</small><br>
+                                                    <small class="text-body-secondary">Término: 07 de Novembro de 2023</small><br>
+                                                    <small class="text-body-secondary"><a class="link-secondary"
+                                                            href="https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=3X4B108159624YUM">ver
+                                                            certificado</a></small><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section id="services" class="min-vh-100 d-flex flex-column justify-content-center">
+        <div class="container">
+            <h1 class="text-center fw-light mb-5">Serviços</h1>
+            <div class="row gx-5 gy-2">
+                <div class="col-md-4">
+                    <div class="card bg-service-card h-100" style="background-color: #284b63;">
+                        <div class="card-body fs-5">
+                            <div class="icon my-3 service-card-title fs-2"><i class="fas fa-code"></i></div>
+                            <h5 class="card-title service-card-title fs-4">Desenvolvimento Web Back-end</h5>
+                            <p class="card-text service-card-text">Construa aplicações web sólidas e escaláveis com o
+                                desenvolvimento back-end.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-service-card h-100" style="background-color: #284b63;">
+                        <div class="card-body fs-5">
+                            <div class="icon my-3 service-card-title fs-2"><i class="fas fa-chart-line"></i></div>
+                            <h5 class="card-title service-card-title fs-4">Ciência de Dados</h5>
+                            <p class="card-text service-card-text">Transforme dados em decisões inteligentes com
+                                soluções avançadas de ciência de dados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-service-card h-100" style="background-color: #284b63;">
+                        <div class="card-body fs-5">
+                            <div class="icon my-3 service-card-title fs-2"><i class="fas fa-robot"></i></div>
+                            <h5 class="card-title service-card-title fs-4">Automação RPA</h5>
+                            <p class="card-text service-card-text">Otimize processos e aumente a produtividade com
+                                soluções de automação RPA personalizadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="min-vh-100 d-flex flex-column justify-content-center">
+        <div class="container pt-5">
+            <h1 class="text-center">Contato</h1>
+
+            <div class="container p-5">
+                <h2 class="text-center text-secondary">Emails para contato</h2>
+
+                <div class="mt-3">
+                    <p class="text-center mb-0">jstleandro@gmail.com</p>
+                    <p class="text-center mb-0">leandrojs@proton.me</p>
+                    <p class="text-center mb-0">leandro.js.dev@gmail.com</p>
+                </div>
+
+                <h2 class="text-center my-4">Whatsapp</h2>
+                <div class="container d-flex justify-content-center">
+
+                    <form class="contact-form" id="contact-form">
+                        <img src="static/img/icons/icons8-whatsapp-28.png" alt="whatsapp icon">
+                        <input id="contact-input" type="text" placeholder="Olá, gostaria de ..."
+                            class="contact-input w-100 text-center">
+                        <a id="contact-button" href="#"><img src="static/img/icons/icons8-enviado-24.png" alt=""></a>
+                    </form>
+
                 </div>
             </div>
 
         </div>
         <div class="d-flex justify-content-center">
-            <a href="#home" class="text-dark">Voltar ao topo</a>
+            <a href="#home" class="link-secondary">Voltar ao topo</a>
         </div>
     </section>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
 
     <script type="text/python" src="static/scripts/script.py"></script>
 </body>

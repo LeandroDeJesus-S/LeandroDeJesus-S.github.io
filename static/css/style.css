@@ -1,67 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-:root {
-    --bg-one: #ebe2e2;
-    --bg-two: #ddccce;
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body {
-    min-height: 100vh;
-}
-section {
-    min-height: 100vh;
-}
-.text-blue-primary {
-    color: #153243;
-}
-.text-blue-secondary {
-    color: #284b63;
-}
-.text-brown-highlight {
-    color: #a16259;
-}
-.title-primary {
-    color: #b8a9ab;
-}
-.title-secondary {
-    color: #ebe2e2;
-}
-.bgd-primary {
-    background-color: var(--bg-two);
-}
-.bgd-secondary {
-    background-color: var(--bg-one);
-}
-.card {
-    height: 100%;
-}
-.card a {
-    background-color: #c89fa3;
-}
-.card a:hover {
-    background-color: #c89fa3;
-}
-.bg-service-card {
-    background-color: #ededed;
-}
-.service-card-title {
-    color: #a16259;
-}
-.service-card-text {
-    color: #5b3f45;
-}
-
-input::placeholder {
-    color: #c89fa3;
-    font-size: 0.8rem;
-    text-align: center;
-}
-input {
+.contact-input {
+    background-color: transparent;
     border: none;
 }
+form:focus {
+    border: 5px solid red;
+}
+form {
+    background-color: #2a3f54;
+    border-radius: 200px;
+    padding: 1.4%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
 input:focus {
-    outline: transparent;
+    outline: none;
 }
