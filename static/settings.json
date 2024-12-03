@@ -1,0 +1,67 @@
+{
+    "profile": {
+        "slogan": "TRANSFORMANDO IDEIAS EM SOFTWARE",
+        "presentation": "Olá, eu sou o Leandro. Tenho {idade} anos e tenho contato com a área de tecnologia desde 2022 onde comecei a estudar programação.",
+        "imageUrl": "static/img/me-removebg-preview.png",
+        "socialLinks": [
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/leandro-de-jesus-santos-0185a1261/",
+                "icon": "static/img/icons/icons8-linkedin-28.png"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/LeandroDeJesus-S",
+                "icon": "static/img/icons/icons8-github-28.png"
+            },
+            {
+                "name": "whatsapp",
+                "url": "https://wa.me/5527988724130",
+                "icon": "static/img/icons/icons8-whatsapp-28.png"
+            },
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/_leandro_zz/",
+                "icon": "static/img/icons/icons8-instagram-28.png"
+            }
+        ]
+    },
+    "about": {
+        "firstSteps": "Minha jornada começou em 2022, onde comecei a estudar python por meio de cursos gratuitos utilizando o próprio YouTube. Desde então foi amor a primeira vista e a partir disso busquei incrementar meu conhecimento cada vez mais, estudando de forma autônoma por cursos online.",
+        "presentMoment": "Atualmente estou em busca da minha primeira oportunidade no mercado de trabalho para a área de programação como desenvolvedor web backend onde eu possa tanto contribuir com meus conhecimentos quanto aprender e se desenvolver cada vez mais.",
+        "futurePlans": "Futuramente pretendo me especializar como cientista de dados, realizar meu superior e me tornar um profissional cada vez melhor, desmistificando a forma como as pessoas enxergam a IA e construindo soluções que tornem a vida delas cada vez melhor."
+    },
+    "projects": [
+        {
+            "name": "site de hotel",
+            "image": "static/img/projects/sistema-hotel.png",
+            "description": "Site de hotel criado para abordar temas como sistema de pagamentos e fila de tarefas.",
+            "githubUrl": "https://github.com/LeandroDeJesus-S/sistema-de-hotel"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Python Back-end Developer / DIO",
+            "image": "static/img/projects/sistema-hotel.png",
+            "description": "Site de hotel criado para abordar temas como sistema de pagamentos e fila de tarefas.",
+            "url": "https://www.dio.me/certificate/WYZB0BCT/share"
+        }
+    ],
+    "servies": [
+        {
+            "title": "Desenvolvimento Web Back-end",
+            "description": "Construa aplicações web sólidas e escaláveis com o desenvolvimento back-end.",
+            "icon": "static/img/icons/icons8-programação-64.png"
+        },
+        {
+            "title": "Analise de dados",
+            "description": "Transforme dados em decisões inteligentes com soluções avançadas de ciência de dados.",
+            "icon": "static/img/icons/icons8-gráfico-combinado-64.png"
+        },
+        {
+            "title": "Automação RPA",
+            "description": "Otimize processos e aumente a produtividade com soluções de automação RPA personalizadas.",
+            "icon": "static/img/icons/icons8-robô-64.png"
+        }
+    ]
+}
