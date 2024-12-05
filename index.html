@@ -23,26 +23,17 @@
                     <span class="profile__title__backend">Back-end</span>
                 </h1>
         
-                <p id="profile__presentation">Olá, eu sou o Leandro. Tenho 22 anos e tenho contato com a área de tecnologia desde 2022 onde comecei a estudar programação.</p>
+                <div id="profile__presentation">
+                    <div class="dots"></div>
+                </div>
         
-                <div class="profile__social-icons">
-                    <a target="_blank" href="https://www.linkedin.com/in/leandro-de-jesus-santos-0185a1261/">
-                        <img width="28" height="28" src="static/img/icons/icons8-linkedin-28.png" alt="linkedin" />
-                    </a>
-                    <a target="_blank" href="https://github.com/LeandroDeJesus-S">
-                        <img width="28" height="28" src="static/img/icons/icons8-github-28.png" alt="linkedin" />
-                    </a>
-                    <a target="_blank" href="https://wa.me/5527988724130">
-                        <img width="28" height="28" src="static/img/icons/icons8-whatsapp-28.png" alt="linkedin" />
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/_leandro_zz/">
-                        <img width="28" height="28" src="static/img/icons/icons8-instagram-28.png" alt="linkedin" />
-                    </a>
+                <div class="profile__social-icons" id="socialLinks">
+                    <div class="dots"></div>
                 </div>
             </div>
 
-            <div class="profile__photo">
-                <img src="static/img/me-removebg-preview.png" alt="">
+            <div class="profile__photo" id="profilePhoto">
+                <div class="spinner"></div>
             </div>
         </div>
     </header>
@@ -55,17 +46,23 @@
 
             <article class="about__start">
                 <h3>Primeiros passos</h3>
-                <p id="about__start__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum aut optio, vitae perspiciatis iste dicta temporibus id illum incidunt in natus aspernatur quia delectus quis, facere praesentium et animi.</p>
+                <div id="about__start__text">
+                    <div class="dots"></div>
+                </div>
             </article>
 
             <article class="about__present">
                 <h3>Momento autal</h3>
-                <p id="about__start__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum aut optio, vitae perspiciatis iste dicta temporibus id illum incidunt in natus aspernatur quia delectus quis, facere praesentium et animi.</p>
+                <div id="about__present__text">
+                    <div class="dots"></div>
+                </div>
             </article>
 
             <article class="about__future">
                 <h3>Planos futuros</h3>
-                <p id="about__start__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum aut optio, vitae perspiciatis iste dicta temporibus id illum incidunt in natus aspernatur quia delectus quis, facere praesentium et animi.</p>
+                <div id="about__future__text">
+                    <div class="dots"></div>
+                </div>
             </article>
         </section>
 
@@ -74,8 +71,8 @@
         <section id="projects">
             <h2 class="projects__title">Projetos</h2>
 
-            <div class="projects__container">
-                <article class="projects__content">
+            <div class="projects__container" id="projectsContainer">
+                <!-- <article class="projects__content">
                     <img src="static/img/projects/sistema-hotel.png" alt="" class="project__img">
                     <div class="project__info">
                         <h3 class="project__name">Site de Hotel</h3>
@@ -85,46 +82,14 @@
                     </div>
                     <div class="project__repo_url">
                         <div class="project__repo_url_btn">
-                            <img width="28" height="28" src="static/img/icons/icons8-github-28.png" alt="linkedin" />
-                            <a href="#" class="github-link">ver repositório</a>
+                            <a href="#" class="github-link"><img width="28" height="28" src="static/img/icons/icons8-github-28.png" alt="linkedin" /></a>
                         </div>
                     </div>
-                </article>
-    
-                <article class="projects__content">
-                    <img src="static/img/projects/sistema-hotel.png" alt="" class="project__img">
-                    <div class="project__info">
-                        <h3 class="project__name">Site de Hotel</h3>
-                        <p class="project__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laudantium officiis ipsa repellendus!
-                        </p>
-                    </div>
-                    <div class="project__repo_url">
-                        <div class="project__repo_url_btn">
-                            <img width="28" height="28" src="static/img/icons/icons8-github-28.png" alt="linkedin" />
-                            <a href="#" class="github-link">ver repositório</a>
-                        </div>
-                    </div>
-                </article>
-    
-                <article class="projects__content">
-                    <img src="static/img/projects/sistema-hotel.png" alt="" class="project__img">
-                    <div class="project__info">
-                        <h3 class="project__name">Site de Hotel</h3>
-                        <p class="project__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laudantium officiis ipsa repellendus!
-                        </p>
-                    </div>
-                    <div class="project__repo_url">
-                        <div class="project__repo_url_btn">
-                            <img width="28" height="28" src="static/img/icons/icons8-github-28.png" alt="linkedin" />
-                            <a href="#" class="github-link">ver repositório</a>
-                        </div>
-                    </div>
-                </article>
+                </article> -->
+
             </div>
 
-            <a href="projects.html" class="projects__see_more">Ver mais</a>
+            <a id="projectsSeeMoreBtn" href="#" class="projects__see_more">Ver mais</a>
         </section>
 
         <div class="hr"><hr></div>
@@ -132,44 +97,11 @@
         <section id="certifications">
             <h2 class="certifications__title">Certificados</h2>
 
-            <div class="certifications__container">
-                <article class="certifications__content">
-                    <img src="static/img/cert/certificado python em jpg-720x400.jpg" alt="" class="certification__img">
-                    <div class="certification__info">
-                        <h3 class="certification__name">Python do básico ao avançado / Udemy</h3>
-                        <p class="certification__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laudantium officiis ipsa repellendus!
-                        </p>
-                    </div>
-                    <div class="certification__repo_url">
-                        <div class="certification__repo_url_btn">
-                            <a href="#" class="github-link">
-                                <img title="Ver certificado" width="20" height="20" src="static/img/icons/icons8-modo-de-exibição-24.png" alt="linkedin" />
-                            </a>
-                        </div>
-                    </div>
-                </article>
-    
-                <article class="certifications__content">
-                    <img src="static/img/cert/certificado python em jpg-720x400.jpg" alt="" class="certification__img">
-                    <div class="certification__info">
-                        <h3 class="certification__name">Python do básico ao avançado / Udemy</h3>
-                        <p class="certification__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laudantium officiis ipsa repellendus!
-                        </p>
-                    </div>
-                    <div class="certification__repo_url">
-                        <div class="certification__repo_url_btn">
-                            <a href="#" class="github-link">
-                                <img title="Ver certificado" width="20" height="20" src="static/img/icons/icons8-modo-de-exibição-24.png" alt="linkedin" />
-                            </a>
-                        </div>
-                    </div>
-                </article>
+            <div class="certifications__container" id="certificationsContainer">
             </div>
 
 
-            <a href="certifications.html" class="certifications__see_more">Ver mais</a>
+            <a href="" id="certificationsSeeMoreBtn" class="certifications__see_more">Ver mais</a>
         </section>
 
         <div class="hr"><hr></div>
@@ -177,30 +109,7 @@
         <section id="services">
             <h2 class="services__title">Serviços</h2>
 
-            <div class="services__container">
-                <article class="service__card">
-                    <img src="static/img/icons/icons8-programação-64.png" alt="">
-                    <h3 class="service__title">Desenvolvimento Web Back-end</h3>
-                    <p class="service___description">
-                        Construa aplicações web sólidas e escaláveis com o desenvolvimento back-end.
-                    </p>
-                </article>
-    
-                <article class="service__card">
-                    <img src="static/img/icons/icons8-gráfico-combinado-64.png" alt="">
-                    <h3 class="service__title">Analise de Dados</h3>
-                    <p class="service___description">
-                        Transforme dados em decisões inteligentes com soluções avançadas de ciência de dados.
-                    </p>
-                </article>
-    
-                <article class="service__card">
-                    <img src="static/img/icons/icons8-robô-64.png" alt="">
-                    <h3 class="service__title">Automação RPA</h3>
-                    <p class="service___description">
-                        Otimize processos e aumente a produtividade com soluções de automação RPA personalizadas.
-                    </p>
-                </article>
+            <div class="services__container" id="servicesContainer">    
             </div>
         </section>
 
@@ -212,10 +121,8 @@
             <form action="" class="contact__form">
                 <div class="contact__emails">
                     <h3>E-mails para contato</h3>
-                    <ol class="contact__emails__list">
-                        <li class="contact__emails__list_item"><a style="text-align: center;" href="mailto:leandro.js.dev@gmail.com">leandro.js.dev@gmail.com</a></li>
-                        <li class="contact__emails__list_item"><a style="text-align: center;" href="mailto:leandro.js.dev@gmail.com">leandro.js.dev@gmail.com</a></li>
-                        <li class="contact__emails__list_item"><a style="text-align: center;" href="mailto:leandro.js.dev@gmail.com">leandro.js.dev@gmail.com</a></li>
+                    <ol class="contact__emails__list" id="contactEmailList">
+                        <div class="dots"></div>
                     </ol>
                 </div>
 
@@ -227,7 +134,7 @@
                 </div>
             </form>
             <div style="display: flex; justify-content: center; margin: 2rem 0;">
-                <a style="color: lightsteelblue;" href="#profile" class="back_to_top">Voltar para o topo</a>
+                <a style="color: lightsteelblue;" href="#profile" class="back_to_top" id="backTopBtn">Voltar para o topo</a>
             </div>
         </section>
 
@@ -236,6 +143,9 @@
     <footer>
         
     </footer>
+
+    <script src="static/js/paginator.js" type="module"></script>
+    <script src="static/js/index.js" type="module"></script>
 
 </body>
 

@@ -1,28 +1,27 @@
 {
     "profile": {
-        "slogan": "TRANSFORMANDO IDEIAS EM SOFTWARE",
-        "presentation": "Olá, eu sou o Leandro. Tenho {idade} anos e tenho contato com a área de tecnologia desde 2022 onde comecei a estudar programação.",
+        "presentationText": "Olá, eu sou o Leandro. Tenho {idade} anos e tenho contato com a área de tecnologia desde 2022 onde comecei a estudar programação.",
         "imageUrl": "static/img/me-removebg-preview.png",
         "socialLinks": [
             {
                 "name": "linkedin",
                 "url": "https://www.linkedin.com/in/leandro-de-jesus-santos-0185a1261/",
-                "icon": "static/img/icons/icons8-linkedin-28.png"
+                "iconUrl": "static/img/icons/icons8-linkedin-28.png"
             },
             {
                 "name": "github",
                 "url": "https://github.com/LeandroDeJesus-S",
-                "icon": "static/img/icons/icons8-github-28.png"
+                "iconUrl": "static/img/icons/icons8-github-28.png"
             },
             {
                 "name": "whatsapp",
                 "url": "https://wa.me/5527988724130",
-                "icon": "static/img/icons/icons8-whatsapp-28.png"
+                "iconUrl": "static/img/icons/icons8-whatsapp-28.png"
             },
             {
                 "name": "instagram",
                 "url": "https://www.instagram.com/_leandro_zz/",
-                "icon": "static/img/icons/icons8-instagram-28.png"
+                "iconUrl": "static/img/icons/icons8-instagram-28.png"
             }
         ]
     },
@@ -37,31 +36,135 @@
             "image": "static/img/projects/sistema-hotel.png",
             "description": "Site de hotel criado para abordar temas como sistema de pagamentos e fila de tarefas.",
             "githubUrl": "https://github.com/LeandroDeJesus-S/sistema-de-hotel"
+        },
+        {
+            "name": "Adote",
+            "image": "static/img/projects/adote.png",
+            "description": "Site de adoção de animais onde usuários podem adotar ou por um animal para adoção.",
+            "githubUrl": "https://github.com/LeandroDeJesus-S/projeto-adote"
+        },
+        {
+            "name": "Blog",
+            "image": "static/img/projects/blog-720x350.png",
+            "description": "Blog onde é possivel criar, ver, comentar posts, etc.",
+            "githubUrl": "https://github.com/LeandroDeJesus-S/projeto-blog"
+        },
+        {
+            "name": "API de banco",
+            "image": "static/img/projects/api_de_banco.png",
+            "description": "API de banco assíncrona com FastAPI.",
+            "githubUrl": "https://github.com/LeandroDeJesus-S/bank-api"
+        },
+        {
+            "name": "Agenda",
+            "image": "static/img/projects/agenda-720x350.jpg",
+            "description": "Site de agenda de contatos pessoais.",
+            "githubUrl": "https://github.com/LeandroDeJesus-S/agenda"
+        },
+        {
+            "name": "Football data scraper",
+            "image": "static/img/projects/football-data.png",
+            "description": "Bot para pegar baixar dados em csv do site football-data.",
+            "githubUrl": "https://github.com/LeandroDeJesus-S/football-data-scraping"
+        },
+        {
+            "name": "VNL scraper",
+            "image": "static/img/projects/vnl.png",
+            "description": "Bot para pegar dados da Liga das Nações de Voleibol.",
+            "githubUrl": "https://github.com/LeandroDeJesus-S/volleyball-nations-league"
         }
     ],
     "certifications": [
         {
-            "name": "Python Back-end Developer / DIO",
-            "image": "static/img/projects/sistema-hotel.png",
-            "description": "Site de hotel criado para abordar temas como sistema de pagamentos e fila de tarefas.",
-            "url": "https://www.dio.me/certificate/WYZB0BCT/share"
+            "name": "Python 3 / Udemy",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/certificado%20python.jpg?raw=true",
+            "duration": "141h",
+            "endDate": "13 Out 2023",
+            "url": "https://ude.my/UC-35ea30b1-0079-4e4c-8cd7-439cb46545c3"
+        },
+        {
+            "name": "SQL Database Specialist / DIO",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/certificado%20mysql.jpg?raw=true",
+            "duration": "72h",
+            "endDate": "21 Nov 2023",
+            "url": "https://www.dio.me/certificate/3938B89F/share"
+        },
+        {
+            "name": "Machine Learning Specialist / DIO",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/machine_learning_specialist.jpg?raw=true",
+            "duration": "92h",
+            "endDate": "24 Dez 2023",
+            "url": "https://www.dio.me/certificate/FDB3951B/share"
+        },
+        {
+            "name": "JavaScript Developer / DIO",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/certificado-js_page-0001.jpg?raw=true",
+            "duration": "39h",
+            "endDate": "2 Dez 2024",
+            "url": "https://www.dio.me/certificate/F9MQQS7O/share"
+        },
+        {
+            "name": "Potencia Tech Powered by Ifood / DIO",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/potencia-tect-powered-by-Ifood-certificado.jpg?raw=true",
+            "duration": "80h",
+            "endDate": "10 Set 2023",
+            "url": "https://www.dio.me/certificate/6A7A8B1E/share"
+        },
+        {
+            "name": "Santander Bootcamp 2023 / DIO",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/potencia-tect-powered-by-Ifood-certificado.jpg?raw=true",
+            "duration": "89h",
+            "endDate": "10 Out 2023",
+            "url": "https://www.dio.me/certificate/7249334C/share"
+        },
+        {
+            "name": "Linguagem Simples / ENAP",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/linguagem%20simples.jpg?raw=true",
+            "duration": "8h",
+            "endDate": "24 Out 2023",
+            "url": "https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=hy2e10815962HaQL"
+        },
+        {
+            "name": "Excel / ENAP",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/certificado_Excel.jpg?raw=true",
+            "duration": "25h",
+            "endDate": "15 Out 2023",
+            "url": "https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=9zJs10503504VtQk"
+        },
+        {
+            "name": "LGPD / ENAP",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/LGPD.jpg?raw=true",
+            "duration": "15h",
+            "endDate": "26 Out 2023",
+            "url": "https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=4ucY10816055SnNv"
+        },
+        {
+            "name": "Estatística / ENAP",
+            "image": "https://github.com/LeandroDeJesus-S/certificados/blob/main/Leandro%20de%20Jesus%20Santos_certificado_Estatistica.jpg?raw=true",
+            "duration": "20h",
+            "endDate": "26 Set 2023",
+            "url": "https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=BHRd10511180dTiS"
         }
     ],
-    "servies": [
-        {
-            "title": "Desenvolvimento Web Back-end",
-            "description": "Construa aplicações web sólidas e escaláveis com o desenvolvimento back-end.",
-            "icon": "static/img/icons/icons8-programação-64.png"
-        },
-        {
-            "title": "Analise de dados",
-            "description": "Transforme dados em decisões inteligentes com soluções avançadas de ciência de dados.",
-            "icon": "static/img/icons/icons8-gráfico-combinado-64.png"
-        },
+    "services": [
         {
             "title": "Automação RPA",
             "description": "Otimize processos e aumente a produtividade com soluções de automação RPA personalizadas.",
             "icon": "static/img/icons/icons8-robô-64.png"
+        },
+        {
+            "title": "Desenvolvimento Web",
+            "description": "Construa aplicações web sólidas e escaláveis, dando vida às suas ideias no mundo digital.",
+            "icon": "static/img/icons/icons8-programação-64.png"
+        },
+        {
+            "title": "Análise de Dados",
+            "description": "Transforme dados em decisões inteligentes com soluções avançadas de análise de dados.",
+            "icon": "static/img/icons/icons8-gráfico-combinado-64.png"
         }
-    ]
+    ],
+    "contact": {
+        "emails": ["leandro.js.dev@gmail.com", "leandrojs@proton.me"],
+        "phone": "5527988724130"
+    }
 }
