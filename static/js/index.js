@@ -13,7 +13,7 @@ async function getData() {
 
 
 function updateProfile(data) {
-    const { presentationText, socialLinks, imageUrl } = data.profile;
+    const { presentationText, socialLinks, imageUrl, technologies } = data.profile;
     const age = (new Date()).getFullYear() - 2002;
     const presentationTextFormatted = presentationText.replace('{idade}', age.toString());
     document.getElementById('profile__presentation').innerHTML = `<p>${presentationTextFormatted}</p>`;
@@ -22,9 +22,13 @@ function updateProfile(data) {
         <img src="${imageUrl}" alt="foto de perfil de Leandro">
     `;
 
-    const socialLinksElement = document.getElementById('socialLinks');
-    socialLinksElement.innerHTML = socialLinks.map(link => {
-        `<a target="_blank" href="${link.url}">
+
+    document.getElementById('techList').innerHTML = technologies.map(tech => {
+        return `<li><img width="24" src="${tech.iconUrl}" alt="${tech.name}" title="${tech.name}"></li>`;
+    }).join('');
+
+    document.getElementById('socialLinks').innerHTML = socialLinks.map(link => {
+        return `<a target="_blank" href="${link.url}">
             <img width="28" height="28" src="${link.iconUrl}" alt="${link.name}" />
         </a>`
     }).join('');
@@ -73,10 +77,6 @@ function updateProjects(projectsPaginator) {
     }
 
     projectsPaginator._offset === 0 ? renderProjects() : null;
-
-    // if (projectsPaginator._offset === 0) {
-    //     renderProjects();
-    // }
 
     seeMoreBtn.addEventListener('click', (e) => {
         e.preventDefault();

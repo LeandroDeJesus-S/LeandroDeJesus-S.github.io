@@ -63,7 +63,7 @@ header > .svg-typing {
 .profile__social-icons {
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    margin: .5rem 0;
 }
 
 .profile__photo  {
@@ -74,7 +74,7 @@ header > .svg-typing {
 }
 
 .profile__photo img {
-    width: 28rem;
+    width: 24rem;
     border-radius: 50%;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
@@ -97,6 +97,9 @@ section article, section div article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+section#about {
+    align-items: flex-start;
 }
 section#about article h3 {
     font-size: 1rem;
@@ -255,6 +258,16 @@ section#about article div p {
     animation: upScale 1s linear infinite;
 }
 
+.technologies {
+    margin: .5rem 0;
+}
+.technologies ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+}
+
 @keyframes spin {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
@@ -292,15 +305,15 @@ section#about article div p {
         justify-content: center;
         min-height: 100vh;
     }
-    .profile {
+    /* .profile {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-    .profile__social-icons {
+    } */
+    .profile__social-icons, .technologies ol {
         justify-content: start;
     }
     .profile__social-icons a {
-        margin-inline: .5rem;
+        margin-inline: 0 .5rem;
     }
 
     .projects__container {
@@ -329,17 +342,17 @@ section#about article div p {
         min-height: 100vh;
         align-items: center;
     }
-    .profile {
+    /* .profile {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
         margin-inline: 10%;
-    }
+    } */
     .profile__social-icons {
         justify-content: start;
     }
     .profile__social-icons a {
-        margin-inline: .5rem;
+        margin-inline: 0 .5rem;
     }
 
     .services__container {
@@ -354,6 +367,12 @@ section#about article div p {
 }
 
 @media screen and (min-width: 992px) {
+    .profile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        margin-inline: 10%;
+    }
     .service__card {
         width: 19rem;
         padding: 2rem;
