@@ -58,7 +58,6 @@ header > .svg-typing {
 
 #profile__presentation p {
     font-weight: 300;
-    text-transform: uppercase;
 }
 
 .profile__social-icons {
@@ -145,29 +144,15 @@ section#about article div p {
     transition: scale .5s;
 }
 
-/* .project__repo_url_btn, .certification__repo_url_btn {
-    display: flex;
-    align-items: center;
-    border: 1px solid dimgray;
-    border-radius: 1rem;
-    background-color: #284b63;
-} */
 .projects__see_more, .certifications__see_more {
     color: #e0dbdb
 }
 
-/* #certifications {
-    margin-top: 1rem;
-} */
 .certification__repo_url .certification__repo_url_btn a {
     padding-inline-end: 0;
     padding: .2rem;
 }
 
-
-/* #services {
-    margin-top: .5rem;
-} */
 #services article {
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 1rem;
@@ -379,9 +364,6 @@ section#about article div p {
 }
 
 @media screen and (min-width: 1200px) {
-    /* .service__card {
-        padding: 4rem;
-    } */
     .project__img, .certification__img {
         height: 12rem;
     }
